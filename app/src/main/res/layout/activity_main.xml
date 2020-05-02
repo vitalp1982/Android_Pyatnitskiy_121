@@ -7,24 +7,71 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView_test"
+        android:id="@+id/log_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="40dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button_test"
+        android:id="@+id/subscrible_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:onClick="print"
-        app:layout_constraintBottom_toTopOf="@+id/textView_test"
+        android:layout_marginBottom="24dp"
+        android:background="#1976D2"
+        android:onClick="registration"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/btn_subsribe_title"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/log_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/pass_hint"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/subscrible_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:autofillHints="@string/pass_hint" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/userPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="@string/email_hint" />
+
+
+    <ImageView
+        android:id="@+id/clear_btn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/clear_form"
+        android:onClick="clearForm"
+        app:layout_constraintBottom_toTopOf="@+id/log_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toEndOf="@+id/subscrible_btn"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        app:srcCompat="@drawable/clear" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Android_Pyatnitskiy_121</string>
+    <string name="app_name">Подписка</string>
+    <string name="btn_subsribe_title">Подписаться</string>
+    <string name="pass_hint">Пароль</string>
+    <string name="email_hint">Электронная почта</string>
+    <string name="title_activity">Подписка</string>
+    <string name="clear_form">Очистить</string>
 </resources>
