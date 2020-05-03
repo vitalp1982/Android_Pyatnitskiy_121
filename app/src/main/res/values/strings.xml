@@ -5,4 +5,6 @@
     <string name="email_hint">Электронная почта</string>
     <string name="title_activity">Подписка</string>
     <string name="clear_form">Очистить</string>
+    <string name="create_user_msg">Учетная запись создана\nлогин пользователя: %1$s\nустановлен пароль: %2$s</string>
+    <string name="error_create_user_msg">Пожалуйста укажите корректный адрес электронной почты и пароль</string>
 </resources>
